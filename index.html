@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="reset.css">
 <link rel="stylesheet" href="style.css">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -10,14 +11,14 @@
     <title>Title</title>
 </head>
 <body>
-    <div class="grid-container">
+    <div class="grid-container" id="grid-container">
         <div class="page-header">
             <div class="page-header_name">Список заказов</div>
             <div class="page-header_button-theme"><button>Светлая тема</button></div>
         </div>
         <div class="filter-row">
             <div class="search_input"><input type="text" placeholder="Номер заказа или ФИО"></div>
-            <div class="filters">Фильтры</div>
+            <button class="filters">Фильтры</button>
             <div class="download">Загрузка</div>
         </div>
         <div class="filter-parameters">
@@ -67,5 +68,6 @@
             </div>
         </div>
     </div>
+    <script src="script.js"></script>
 </body>
 </html>

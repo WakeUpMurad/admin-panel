@@ -4,7 +4,7 @@ body {
 .grid-container {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 0.3fr 0.2fr 0.3fr 2.5fr;
+    grid-template-rows: 0.3fr 0.2fr 0 2.5fr;
     gap: 0px 0px;
     grid-template-areas:
     "page-header page-header page-header page-header"
@@ -46,8 +46,10 @@ body {
 
 .search_input { grid-area: search_input; }
 
-.filters { grid-area: filters; }
-
+.filters { grid-area: filters;
+    cursor: pointer;
+    transition: 0.4s;
+}
 .download { grid-area: download; }
 
 .filter-parameters {
@@ -59,6 +61,8 @@ body {
     "date-registration order-status order-sum apply_button";
     grid-area: filter-parameters;
     background-color: #EBF0F5;
+    transition: max-height 0.2s ease-out;
+    overflow: hidden;
 }
 .date-registration {
     display: grid;
