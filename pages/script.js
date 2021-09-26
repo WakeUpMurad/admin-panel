@@ -4,7 +4,7 @@
     for (i = 0; i < acc.length; i++) {
     acc[i].addEventListener("click", function () {
         const element = document.getElementById("grid-container");
-        element.style.gridTemplateRows = '0.3fr 0.2fr 0.3fr 2.2fr';
+        element.style.gridTemplateRows = '0.3fr 0.2fr 0.5fr 2.0fr';
             this.classList.toggle("active");
 
         })
