@@ -1,0 +1,79 @@
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+.form_input {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px dashed #8055FF;
+    background: #E5E5E5;
+    border-radius: 5px;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 13px;
+    line-height: 16px;
+    overflow: hidden;
+    width: 22rem;
+    height: 25rem;
+}
+label {
+    display: block;
+}
+
+.label_input {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    position: relative;
+    padding: 0 3rem 1.5rem;
+    margin: 0 0 1.5rem;
+}
+
+.label_input input {
+    width: 100%;
+    height: 2rem;
+    margin: 0.5rem 0;
+    padding: 0.25rem 0.25rem 0.25rem 0.5rem;
+    border-radius: 0.25rem;
+    border: 1px solid #459DF5;
+    background: #fff;
+    outline: none;
+}
+
+.label_input input::placeholder {
+    color: #BAD8F5;
+}
+.label_input img {
+    width: 1rem;
+    height: 1rem;
+}
+
+.date_empty {
+
+}
+
+input.date_incorrect  {
+    border: 1px solid #F53152;
+}
+
+.delete_date {
+    position: absolute;
+    right: 4rem;
+    bottom: 2.5rem;
+}
+
+input.date_disabled {
+    background-color: #BAD8F5;
+}
+.locked_date {
+    position: absolute;
+    right: 4rem;
+    bottom: 2.5rem;
+}
+
+
+
+
