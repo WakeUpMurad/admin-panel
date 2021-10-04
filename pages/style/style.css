@@ -1,0 +1,179 @@
+body {
+    font-family: 'Ubuntu', sans-serif;
+}
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 0.3fr 0.2fr 0 2.5fr;
+    gap: 0px 0px;
+    grid-template-areas:
+    "page-header page-header page-header page-header"
+    "filter-row filter-row filter-row filter-row"
+    "filter-parameters filter-parameters filter-parameters filter-parameters"
+    "table table table table";
+    height: 100vh;
+    border: 2px solid black;
+}
+
+.page-header {
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 0px 0px;
+    grid-template-areas:
+    "page-header_name page-header_button-theme";
+    grid-area: page-header;
+}
+
+.page-header_name {
+    grid-area: page-header_name;
+    font-size: 26px;
+    font-weight: 700;
+}
+
+.page-header_button-theme { grid-area: page-header_button-theme;
+}
+
+.filter-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 0px 0px;
+    grid-template-areas:
+    "search_input filters download";
+    grid-area: filter-row;
+}
+
+.search_input { grid-area: search_input; }
+
+.filters { grid-area: filters;
+    cursor: pointer;
+    transition: 0.4s;
+}
+.download { grid-area: download; }
+
+.filter-parameters {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 2fr;
+    gap: 0px 0px;
+    grid-template-areas:
+    "date-registration order-status order-sum apply_button";
+    grid-area: filter-parameters;
+    background-color: #EBF0F5;
+    transition: max-height 0.2s ease-out;
+    overflow: hidden;
+}
+.date-registration {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 0px 0px;
+    grid-template-areas:
+    "data_registration_title data_registration_title"
+    "date-from date-to";
+    grid-area: date-registration;
+}
+.data_registration_title { grid-area: data_registration_title; }
+.date-from { grid-area: date-from; }
+.date-to { grid-area: date-to; }
+.order-status {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 0px 0px;
+    grid-template-areas:
+    "order-status_title"
+    "order-status_select";
+    grid-area: order-status;
+}
+.order-status_title { grid-area: order-status_title; }
+.order-status_select { grid-area: order-status_select; }
+
+.order-sum {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 0px 0px;
+    grid-template-areas:
+    "order-sum_title order-sum_title"
+    "sum_from sum_to";
+    grid-area: order-sum;
+}
+.order-sum_title { grid-area: order-sum_title; }
+.sum_from { grid-area: sum_from; }
+.sum_to { grid-area: sum_to; }
+.apply_button { grid-area: apply_button; }
+
+.table {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 0.3fr 2.5fr 0.2fr;
+    gap: 0px 0px;
+    grid-template-areas:
+    "table__header table__header table__header table__header table__header table__header"
+    "table__body table__body table__body table__body table__body table__body"
+    "table_footer table_footer table_footer table_footer table_footer table_footer";
+    grid-area: table;
+}
+
+.table__header {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 0px 0px;
+    grid-template-areas:
+    "number date status position sum fio-buyer";
+    grid-area: table__header;
+    background-color: #459DF5;
+}
+
+.number { grid-area: number; }
+
+.date { grid-area: date; }
+
+.status { grid-area: status; }
+
+.position { grid-area: position; }
+
+.sum { grid-area: sum; }
+
+.fio-buyer { grid-area: fio-buyer; }
+
+.table__body {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-template-areas:
+    ". . . . . ."
+    ". . . . . ."
+    ". . . . . ."
+    ". . . . . ."
+    ". . . . . ."
+    ". . . . . ."
+    ". . . . . ."
+    ". . . . . ."
+    ". . . . . ."
+    ". . . . . .";
+    grid-area: table__body;
+}
+
+.table_footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 0px 0px;
+    grid-template-areas:
+    "chosen-items change-status delete list-number";
+    grid-area: table_footer;
+    background-color:     #EBF0F5
+}
+
+.chosen-items { grid-area: chosen-items; }
+
+.change-status { grid-area: change-status; }
+
+.delete { grid-area: delete; }
+
+.list-number { grid-area: list-number; }
