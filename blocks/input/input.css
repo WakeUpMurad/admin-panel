@@ -1,9 +1,16 @@
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
 .form_input {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     border: 1px dashed #8055FF;
+    background: #E5E5E5;
     border-radius: 5px;
     font-family: 'Ubuntu', sans-serif;
     font-size: 13px;
