@@ -1,0 +1,98 @@
+:root {
+    --wrapper-border-color: #8055FF;
+    --button-font-color-normal: #FFF;
+    --button-font-color-dark: #000;
+    --button-shadow-normal: #BAD8F5;
+    --button-shadow-dark: rgba(0, 0, 0, 0.2);
+    --button-background-color: #459DF5;
+    --button-empty-color: #459DF5;
+}
+body{
+    font-size: 13px;
+    font-family: "Ubuntu", sans-serif;
+}
+
+.button-wrapper {
+    width: 600px;
+    margin: 0 auto;
+    border: 1px dashed var(--wrapper-border-color);
+    padding: 1rem;
+    display: flex;
+    justify-content: space-around;
+}
+.button-block{
+    width: 10rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 3rem;
+}
+.button-block_last{
+    height: 100px;
+}
+.button-column_last{
+    align-self: self-start;
+}
+
+.button__item{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
+    border-radius: 4px;
+    color: var(--button-font-color-normal);
+    margin-bottom: 1rem;
+}
+.button__item:hover{
+    box-shadow: 0px 2px 5px 2px var(--button-shadow-normal);
+}
+.button__img{
+    width: 1.25rem;
+    height: 1.25rem;
+}
+.button__text{
+    font-size: 13px;
+    display: block;
+    padding-left: 0.25rem;
+}
+.button_full-huge{
+    background-color: var(--button-background-color);
+    padding: 0.5rem 1.25rem 0.5rem 1rem;
+    color: var(--button-font-color-normal);
+}
+.button_full-huge-img {
+    background-color: var(--button-background-color);
+    padding: 0.5rem;
+}
+.button_full-small {
+    background-color: var(--button-background-color);
+    padding: 0.25rem 0.8rem 0.25rem 0.5rem;
+    color: var(--button-font-color-normal);
+}
+.button_full-smale-img {
+    background-color: var(--button-background-color);
+    padding: 0.25rem;
+}
+.button_empty-huge {
+    padding: 0.5rem 1.25rem 0.5rem 1rem;
+    color: var(--button-empty-color);
+}
+.button_empty-huge-img{
+    padding: 0.5rem;
+}
+.button_empty-small{
+    padding: 0.25rem 0.8rem 0.25rem 0.5rem;
+    color: var(--button-empty-color);
+}
+.button_empty-small-img {
+    padding: 0.25rem;
+}
+
+.button_empty-huge-text {
+    padding: 0.5rem 1.25rem 0.5rem 1rem;
+    color: var(--button-font-color-dark);
+}
+.button_empty-huge-text:hover{
+    box-shadow: 0px 2px 5px 2px var(--button-shadow-dark);
+}

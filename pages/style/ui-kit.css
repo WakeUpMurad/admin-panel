@@ -2,6 +2,7 @@
 @import "searchbar.css";
 @import "checkbox.css";
 @import "radio.css";
+@import "buttons.css";
 
 body {
     background: #E5E5E5;
@@ -43,4 +44,9 @@ body {
 }
 .radio {
     margin: 2rem;
+}
+.buttons {
+    margin: 2rem;
+    position: absolute;
+    top: 28rem;
 }
